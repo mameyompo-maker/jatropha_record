@@ -40,32 +40,38 @@ json.dump(dict(lots=[{k:(str(v) if isinstance(v,D) else v) for k,v in l.items()}
 for x in days: print(x["date"],sum(x["stock"].values()),x["used"],x["sown"])
 for l in L: print(l["name"],l["arr"],l["dry_end"],l["prep"],l["ready"],l["start"],l["end"])
 
-# chart: stacked bars of end-of-day stock
-fig,ax=plt.subplots(figsize=(11,6),dpi=160)
-x=[t["date"] for t in days]; base=[0]*len(x)
-for l in L:
-    v=[t["stock"][l["name"]] for t in days]
-    ax.bar(x,v,bottom=base,width=0.8,color=l["color"],label=f'{l["name"]} ({l["kg"]:,} kg)',edgecolor="white",linewidth=0.6)
-    base=[b+vv for b,vv in zip(base,v)]
-# idle days shading
-for t in days:
-    if t["used"]<t["cap"] and t["date"]>=D(2026,10,21) and not (t["date"]==days[-1]["date"]):
-        frac=1-t["used"]/t["cap"]
-        c=md.date2num(t["date"]); ax.axvspan(c-0.5,c+0.5,color="#d03b3b",alpha=0.07+0.13*frac,lw=0,zorder=0)
-ax.axvline(md.date2num(D(2026,10,21))-0.5,color="#555",ls=":",lw=1.2); ax.text(md.date2num(D(2026,10,21))-0.3,max(base)*1.04,"播種開始 10/21",fontsize=8,color="#333")
-mx=max(base); mi=base.index(mx)
-ax.annotate(f'最大 {mx:,} kg（11/14〜11/15）',xy=(x[mi],mx),xytext=(x[mi]+dt.timedelta(9),mx*0.99),fontsize=9,arrowprops=dict(arrowstyle="-",color="#555"),color="#222")
-ax.set_ylabel("倉庫内の種子量（kg, 各日の播種後）",color="#333")
-ax.xaxis.set_major_locator(md.DayLocator(interval=3)); ax.xaxis.set_major_formatter(md.DateFormatter("%m/%d"))
-plt.setp(ax.get_xticklabels(),rotation=60,fontsize=8)
-ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v,p:f"{int(v):,}"))
-ax.grid(axis="y",color="#e5e5e5"); ax.set_axisbelow(True)
-for s in ["top","right"]: ax.spines[s].set_visible(False)
-ax.spines["left"].set_color("#999"); ax.spines["bottom"].set_color("#999")
-from matplotlib.patches import Patch
-h,lab=ax.get_legend_handles_labels()
-h.append(Patch(color="#d03b3b",alpha=0.2)); lab.append("播種できる種子が不足（作業日）")
-ax.legend(h,lab,fontsize=8,frameon=False,loc="upper center",bbox_to_anchor=(0.5,-0.13),ncol=4)
-ax.set_title("種子の倉庫保管量の推移（種類別）",fontsize=12,loc="left")
-ax.set_xlim(x[0]-dt.timedelta(1),x[-1]+dt.timedelta(1))
-fig.tight_layout(); fig.savefig(os.path.join(HERE,"stock.png"))
+# chart: stacked bars of end-of-day stock (Japanese and English)
+TEXT={'ja': {'start': '播種開始 10/21', 'mx': '最大 {mx:,} kg（11/14〜11/15）', 'yl': '倉庫内の種子量（kg, 各日の播種後）', 'short': '播種できる種子が不足（作業日）', 'title': '種子の倉庫保管量の推移（種類別）', 'out': 'stock.png', 'datefmt': '%m/%d'}, 'en': {'start': 'Sowing starts 21 Oct', 'mx': 'Peak {mx:,} kg (14–15 Nov)', 'yl': "Seed in storage (kg, after each day's sowing)", 'short': 'Not enough seed ready (working day)', 'title': 'Seed in storage by lot', 'out': 'stock_en.png', 'datefmt': '%d %b'}}
+def draw(T):
+    fig,ax=plt.subplots(figsize=(11,6),dpi=160)
+    x=[t["date"] for t in days]; base=[0]*len(x)
+    for l in L:
+        v=[t["stock"][l["name"]] for t in days]
+        ax.bar(x,v,bottom=base,width=0.8,color=l["color"],label=f'{l["name"]} ({l["kg"]:,} kg)',edgecolor="white",linewidth=0.6)
+        base=[b+vv for b,vv in zip(base,v)]
+    # idle days shading
+    for t in days:
+        if t["used"]<t["cap"] and t["date"]>=D(2026,10,21) and not (t["date"]==days[-1]["date"]):
+            frac=1-t["used"]/t["cap"]
+            c=md.date2num(t["date"]); ax.axvspan(c-0.5,c+0.5,color="#d03b3b",alpha=0.07+0.13*frac,lw=0,zorder=0)
+    ax.axvline(md.date2num(D(2026,10,21))-0.5,color="#555",ls=":",lw=1.2); ax.text(md.date2num(D(2026,10,21))-0.3,max(base)*1.04,T["start"],fontsize=8,color="#333")
+    mx=max(base); mi=base.index(mx)
+    ax.annotate(T['mx'].format(mx=mx),xy=(x[mi],mx),xytext=(x[mi]+dt.timedelta(9),mx*0.99),fontsize=9,arrowprops=dict(arrowstyle="-",color="#555"),color="#222")
+    ax.set_ylabel(T["yl"],color="#333")
+    ax.xaxis.set_major_locator(md.DayLocator(interval=3)); ax.xaxis.set_major_formatter(md.DateFormatter(T["datefmt"]))
+    plt.setp(ax.get_xticklabels(),rotation=60,fontsize=8)
+    ax.yaxis.set_major_formatter(matplotlib.ticker.FuncFormatter(lambda v,p:f"{int(v):,}"))
+    ax.grid(axis="y",color="#e5e5e5"); ax.set_axisbelow(True)
+    for s in ["top","right"]: ax.spines[s].set_visible(False)
+    ax.spines["left"].set_color("#999"); ax.spines["bottom"].set_color("#999")
+    from matplotlib.patches import Patch
+    h,lab=ax.get_legend_handles_labels()
+    h.append(Patch(color="#d03b3b",alpha=0.2)); lab.append(T["short"])
+    ax.legend(h,lab,fontsize=8,frameon=False,loc="upper center",bbox_to_anchor=(0.5,-0.13),ncol=4)
+    ax.set_title(T["title"],fontsize=12,loc="left")
+    ax.set_xlim(x[0]-dt.timedelta(1),x[-1]+dt.timedelta(1))
+    fig.tight_layout(); fig.savefig(os.path.join(HERE,T["out"]))
+
+    plt.close(fig)
+
+for _lang in ("ja","en"): draw(TEXT[_lang])

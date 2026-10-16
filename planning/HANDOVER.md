@@ -2,6 +2,11 @@
 
 Claude Code で作業を続けるための引き継ぎメモです。新しいセッションでは、まずこのファイルを読ませてください。
 
+**作業フォルダ（ローカル）：** `C:\Users\kazdr\OneDrive - 河村研究室\Malema_2\01_planning`
+（GitHub の `mameyompo-maker/jatropha_record` の `planning/` フォルダと同じ内容。ブランチは `ccr-f2d35b55-0cwtw4`）
+
+英語版は `HANDOVER_EN.md` です。
+
 ## 1. 目的
 
 到着する種子の保管量（倉庫・乾燥場所）と播種スケジュールを計画する。成果物は Word 文書で、次の内容を含む。
@@ -13,24 +18,29 @@ Claude Code で作業を続けるための引き継ぎメモです。新しい�
 
 | パス | 内容 |
 |---|---|
-| `planning/種子保管・播種計画_2026.docx` | 成果物（Word） |
-| `planning/種子保管量グラフ_2026.png` | グラフ単体（docx 内の図と同じ） |
-| `planning/scripts/sim.py` | 日別シミュレーションとグラフ作成。`plan.json` と `stock.png` を出力 |
-| `planning/scripts/make.js` | `plan.json` と `stock.png` から Word を作成（npm `docx` を使用） |
-| `planning/scripts/plan.json` | シミュレーション結果（ロット別日程と日別在庫） |
+| `種子保管・播種計画_2026.docx` | 成果物（Word、日本語版） |
+| `Seed_Storage_Sowing_Plan_2026_EN.docx` | 成果物（Word、英語版） |
+| `種子保管量グラフ_2026.png` / `Seed_Storage_Chart_2026_EN.png` | グラフ単体（日本語・英語） |
+| `scripts/sim.py` | 日別シミュレーションとグラフ作成。`plan.json`、`stock.png`（日本語）、`stock_en.png`（英語）を出力 |
+| `scripts/make.js` | 日本語版 Word を作成（npm `docx` を使用） |
+| `scripts/make_en.js` | 英語版 Word を作成 |
+| `scripts/plan.json` | シミュレーション結果（ロット別日程と日別在庫） |
 
-作業ブランチは `ccr-f2d35b55-0cwtw4`（`mameyompo-maker/jatropha_record`）です。
+※ パスは `01_planning` フォルダ（リポジトリでは `planning/`）からの相対パスです。
 
 ## 3. 再作成の手順
 
-```bash
-pip install matplotlib        # 初回のみ
-npm install docx              # 初回のみ（make.js が require('docx') できればよい）
-python3 planning/scripts/sim.py    # plan.json と stock.png を更新（ロット日程を標準出力に表示）
-node planning/scripts/make.js      # docx を作成し、グラフ PNG を planning/ にコピー
+Python と Node.js が必要です。`01_planning` フォルダで実行します（Windows の例）。
+
+```powershell
+pip install matplotlib            # 初回のみ
+npm install docx                  # 初回のみ（01_planning に node_modules ができる）
+python scripts\sim.py             # plan.json とグラフ PNG を更新（ロット日程を表示）
+node scripts\make.js              # 日本語版 docx を作成
+node scripts\make_en.js           # 英語版 docx を作成
 ```
 
-PDF で確認したいときは、LibreOffice を使って `soffice --headless --convert-to pdf planning/種子保管・播種計画_2026.docx` を実行します。
+出力先はスクリプトの場所を基準に決まります（`scripts` の1つ上のフォルダ）。どこから実行しても同じ場所に書き出されます。OneDrive の同期中にファイルを Word で開いていると上書きに失敗するので、Word を閉じてから実行してください。
 
 ## 4. 現在の条件（確定済み）
 
@@ -82,14 +92,16 @@ PDF で確認したいときは、LibreOffice を使って `soffice --headless -
 2. 日曜休み・土曜半分に変更。播種量は全ロット合計で560 kg/日。
 3. Ghana 0（745 kg、在庫）を Ribáuè 2025 の後、India の前に追加。
 4. 最初の播種を 10/21 に変更（現在の版）。
+5. 英語版（Word・グラフ）を追加。
 
 ## 7. 条件を変えるときの注意
 
 - **入力の場所：** ロット・量・到着日・色は `sim.py` の `lots` に、開始日は `sim.py` の `prep=D(2026,10,20); ready=D(2026,10,21)` に書いてある。
 - **グラフの設定：** 不足を示す赤い帯の開始日は `sim.py` の `t["date"]>=D(2026,10,21)`、点線と注記は `axvline`、最大値注記の期間テキストは `最大 {mx:,} kg（…）` にある。
-- **`make.js` の本文は手書き。** 要点、4.1 増減表、4.2 不足表、5章の提案の数値は自動計算ではない。`sim.py` を再実行したら、その出力と `plan.json` を見て本文を書き直す必要がある。自動で連動するのは、ロット別スケジュール表、付録の日別表、グラフ、表の色付け（`shortSet` の開始日も確認）。
+- **`make.js` / `make_en.js` の本文は手書き（日英それぞれ）。** 要点、4.1 増減表、4.2 不足表、5章の提案の数値は自動計算ではない。`sim.py` を再実行したら、その出力と `plan.json` を見て本文を書き直す必要がある。自動で連動するのは、ロット別スケジュール表、付録の日別表、グラフ、表の色付け（`shortSet` の開始日も確認）。
 - **7ロットを超える場合：** 色はカテゴリ用パレットの8色目（赤 `#e34948`）まで使える。それ以上は色を増やさずにまとめる。
-- **フォント：** グラフは IPA / Yu Gothic / Meiryo / Hiragino のうち、使えるものを使う。文書のフォントは Yu Gothic を指定している。
+- **英語版：** 条件を変えたら日英両方の本文を直す。グラフの文言は `sim.py` の `TEXT`（ja / en）にある。
+- **フォント：** グラフは IPA / Yu Gothic / Meiryo / Hiragino のうち、使えるものを使う（Windows では Yu Gothic）。文書のフォントは日本語版が Yu Gothic、英語版が Arial。
 - **ページの区切り：** 4章の前に改ページを入れている。見出しだけが前ページに残るのを防ぐため。
 
 ## 8. 今後の候補（未着手）
