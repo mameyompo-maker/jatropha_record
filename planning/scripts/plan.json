@@ -1,0 +1,1413 @@
+{
+ "lots": [
+  {
+   "name": "Ribáuè 2026",
+   "kg": 1326,
+   "arr": null,
+   "dry_end": null,
+   "prep": "2026-10-20",
+   "ready": "2026-10-21",
+   "color": "#2a78d6",
+   "rem": 0,
+   "start": "2026-10-21",
+   "end": "2026-10-23"
+  },
+  {
+   "name": "Ribáuè 2025",
+   "kg": 749,
+   "arr": null,
+   "dry_end": null,
+   "prep": "2026-10-20",
+   "ready": "2026-10-21",
+   "color": "#eb6834",
+   "rem": 0,
+   "start": "2026-10-23",
+   "end": "2026-10-26"
+  },
+  {
+   "name": "Ghana 0",
+   "kg": 745,
+   "arr": null,
+   "dry_end": null,
+   "prep": "2026-10-20",
+   "ready": "2026-10-21",
+   "color": "#6250d6",
+   "rem": 0,
+   "start": "2026-10-26",
+   "end": "2026-10-27"
+  },
+  {
+   "name": "India",
+   "kg": 8400,
+   "arr": "2026-10-16",
+   "dry_end": "2026-10-22",
+   "prep": "2026-10-23",
+   "ready": "2026-10-24",
+   "color": "#1baf7a",
+   "rem": 0,
+   "start": "2026-10-27",
+   "end": "2026-11-16"
+  },
+  {
+   "name": "Ghana 1",
+   "kg": 3000,
+   "arr": "2026-10-21",
+   "dry_end": "2026-10-27",
+   "prep": "2026-10-28",
+   "ready": "2026-10-29",
+   "color": "#eda100",
+   "rem": 0,
+   "start": "2026-11-16",
+   "end": "2026-11-21"
+  },
+  {
+   "name": "Ghana 2",
+   "kg": 12000,
+   "arr": "2026-11-14",
+   "dry_end": "2026-11-20",
+   "prep": "2026-11-21",
+   "ready": "2026-11-22",
+   "color": "#e87ba4",
+   "rem": 0,
+   "start": "2026-11-23",
+   "end": "2026-12-18"
+  },
+  {
+   "name": "Ghana 3",
+   "kg": 3700,
+   "arr": "2026-11-13",
+   "dry_end": "2026-11-19",
+   "prep": "2026-11-20",
+   "ready": "2026-11-21",
+   "color": "#008300",
+   "rem": 0,
+   "start": "2026-12-18",
+   "end": "2026-12-28"
+  }
+ ],
+ "days": [
+  {
+   "date": "2026-10-15",
+   "stock": {
+    "Ribáuè 2026": 1326,
+    "Ribáuè 2025": 749,
+    "Ghana 0": 745,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {},
+   "used": 0,
+   "cap": 560,
+   "wd": 3
+  },
+  {
+   "date": "2026-10-16",
+   "stock": {
+    "Ribáuè 2026": 1326,
+    "Ribáuè 2025": 749,
+    "Ghana 0": 745,
+    "India": 8400,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {},
+   "used": 0,
+   "cap": 560,
+   "wd": 4
+  },
+  {
+   "date": "2026-10-17",
+   "stock": {
+    "Ribáuè 2026": 1326,
+    "Ribáuè 2025": 749,
+    "Ghana 0": 745,
+    "India": 8400,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {},
+   "used": 0,
+   "cap": 280,
+   "wd": 5
+  },
+  {
+   "date": "2026-10-18",
+   "stock": {
+    "Ribáuè 2026": 1326,
+    "Ribáuè 2025": 749,
+    "Ghana 0": 745,
+    "India": 8400,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {},
+   "used": 0,
+   "cap": 0,
+   "wd": 6
+  },
+  {
+   "date": "2026-10-19",
+   "stock": {
+    "Ribáuè 2026": 1326,
+    "Ribáuè 2025": 749,
+    "Ghana 0": 745,
+    "India": 8400,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {},
+   "used": 0,
+   "cap": 560,
+   "wd": 0
+  },
+  {
+   "date": "2026-10-20",
+   "stock": {
+    "Ribáuè 2026": 1326,
+    "Ribáuè 2025": 749,
+    "Ghana 0": 745,
+    "India": 8400,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {},
+   "used": 0,
+   "cap": 560,
+   "wd": 1
+  },
+  {
+   "date": "2026-10-21",
+   "stock": {
+    "Ribáuè 2026": 766,
+    "Ribáuè 2025": 749,
+    "Ghana 0": 745,
+    "India": 8400,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "Ribáuè 2026": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 2
+  },
+  {
+   "date": "2026-10-22",
+   "stock": {
+    "Ribáuè 2026": 206,
+    "Ribáuè 2025": 749,
+    "Ghana 0": 745,
+    "India": 8400,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "Ribáuè 2026": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 3
+  },
+  {
+   "date": "2026-10-23",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 395,
+    "Ghana 0": 745,
+    "India": 8400,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "Ribáuè 2026": 206,
+    "Ribáuè 2025": 354
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 4
+  },
+  {
+   "date": "2026-10-24",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 115,
+    "Ghana 0": 745,
+    "India": 8400,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "Ribáuè 2025": 280
+   },
+   "used": 280,
+   "cap": 280,
+   "wd": 5
+  },
+  {
+   "date": "2026-10-25",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 115,
+    "Ghana 0": 745,
+    "India": 8400,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {},
+   "used": 0,
+   "cap": 0,
+   "wd": 6
+  },
+  {
+   "date": "2026-10-26",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 300,
+    "India": 8400,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "Ribáuè 2025": 115,
+    "Ghana 0": 445
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 0
+  },
+  {
+   "date": "2026-10-27",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 8140,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "Ghana 0": 300,
+    "India": 260
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 1
+  },
+  {
+   "date": "2026-10-28",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 7580,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "India": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 2
+  },
+  {
+   "date": "2026-10-29",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 7020,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "India": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 3
+  },
+  {
+   "date": "2026-10-30",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 6460,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "India": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 4
+  },
+  {
+   "date": "2026-10-31",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 6180,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "India": 280
+   },
+   "used": 280,
+   "cap": 280,
+   "wd": 5
+  },
+  {
+   "date": "2026-11-01",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 6180,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {},
+   "used": 0,
+   "cap": 0,
+   "wd": 6
+  },
+  {
+   "date": "2026-11-02",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 5620,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "India": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 0
+  },
+  {
+   "date": "2026-11-03",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 5060,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "India": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 1
+  },
+  {
+   "date": "2026-11-04",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 4500,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "India": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 2
+  },
+  {
+   "date": "2026-11-05",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 3940,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "India": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 3
+  },
+  {
+   "date": "2026-11-06",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 3380,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "India": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 4
+  },
+  {
+   "date": "2026-11-07",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 3100,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "India": 280
+   },
+   "used": 280,
+   "cap": 280,
+   "wd": 5
+  },
+  {
+   "date": "2026-11-08",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 3100,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {},
+   "used": 0,
+   "cap": 0,
+   "wd": 6
+  },
+  {
+   "date": "2026-11-09",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 2540,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "India": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 0
+  },
+  {
+   "date": "2026-11-10",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 1980,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "India": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 1
+  },
+  {
+   "date": "2026-11-11",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 1420,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "India": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 2
+  },
+  {
+   "date": "2026-11-12",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 860,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "India": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 3
+  },
+  {
+   "date": "2026-11-13",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 300,
+    "Ghana 1": 3000,
+    "Ghana 2": 0,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "India": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 4
+  },
+  {
+   "date": "2026-11-14",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 20,
+    "Ghana 1": 3000,
+    "Ghana 2": 12000,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "India": 280
+   },
+   "used": 280,
+   "cap": 280,
+   "wd": 5
+  },
+  {
+   "date": "2026-11-15",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 20,
+    "Ghana 1": 3000,
+    "Ghana 2": 12000,
+    "Ghana 3": 3700
+   },
+   "sown": {},
+   "used": 0,
+   "cap": 0,
+   "wd": 6
+  },
+  {
+   "date": "2026-11-16",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 2460,
+    "Ghana 2": 12000,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "India": 20,
+    "Ghana 1": 540
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 0
+  },
+  {
+   "date": "2026-11-17",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 1900,
+    "Ghana 2": 12000,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 1": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 1
+  },
+  {
+   "date": "2026-11-18",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 1340,
+    "Ghana 2": 12000,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 1": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 2
+  },
+  {
+   "date": "2026-11-19",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 780,
+    "Ghana 2": 12000,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 1": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 3
+  },
+  {
+   "date": "2026-11-20",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 220,
+    "Ghana 2": 12000,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 1": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 4
+  },
+  {
+   "date": "2026-11-21",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 12000,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 1": 220
+   },
+   "used": 220,
+   "cap": 280,
+   "wd": 5
+  },
+  {
+   "date": "2026-11-22",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 12000,
+    "Ghana 3": 3700
+   },
+   "sown": {},
+   "used": 0,
+   "cap": 0,
+   "wd": 6
+  },
+  {
+   "date": "2026-11-23",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 11440,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 0
+  },
+  {
+   "date": "2026-11-24",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 10880,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 1
+  },
+  {
+   "date": "2026-11-25",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 10320,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 2
+  },
+  {
+   "date": "2026-11-26",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 9760,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 3
+  },
+  {
+   "date": "2026-11-27",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 9200,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 4
+  },
+  {
+   "date": "2026-11-28",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 8920,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 280
+   },
+   "used": 280,
+   "cap": 280,
+   "wd": 5
+  },
+  {
+   "date": "2026-11-29",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 8920,
+    "Ghana 3": 3700
+   },
+   "sown": {},
+   "used": 0,
+   "cap": 0,
+   "wd": 6
+  },
+  {
+   "date": "2026-11-30",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 8360,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 0
+  },
+  {
+   "date": "2026-12-01",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 7800,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 1
+  },
+  {
+   "date": "2026-12-02",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 7240,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 2
+  },
+  {
+   "date": "2026-12-03",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 6680,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 3
+  },
+  {
+   "date": "2026-12-04",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 6120,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 4
+  },
+  {
+   "date": "2026-12-05",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 5840,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 280
+   },
+   "used": 280,
+   "cap": 280,
+   "wd": 5
+  },
+  {
+   "date": "2026-12-06",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 5840,
+    "Ghana 3": 3700
+   },
+   "sown": {},
+   "used": 0,
+   "cap": 0,
+   "wd": 6
+  },
+  {
+   "date": "2026-12-07",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 5280,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 0
+  },
+  {
+   "date": "2026-12-08",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 4720,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 1
+  },
+  {
+   "date": "2026-12-09",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 4160,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 2
+  },
+  {
+   "date": "2026-12-10",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 3600,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 3
+  },
+  {
+   "date": "2026-12-11",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 3040,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 4
+  },
+  {
+   "date": "2026-12-12",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 2760,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 280
+   },
+   "used": 280,
+   "cap": 280,
+   "wd": 5
+  },
+  {
+   "date": "2026-12-13",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 2760,
+    "Ghana 3": 3700
+   },
+   "sown": {},
+   "used": 0,
+   "cap": 0,
+   "wd": 6
+  },
+  {
+   "date": "2026-12-14",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 2200,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 0
+  },
+  {
+   "date": "2026-12-15",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 1640,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 1
+  },
+  {
+   "date": "2026-12-16",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 1080,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 2
+  },
+  {
+   "date": "2026-12-17",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 520,
+    "Ghana 3": 3700
+   },
+   "sown": {
+    "Ghana 2": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 3
+  },
+  {
+   "date": "2026-12-18",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 3660
+   },
+   "sown": {
+    "Ghana 2": 520,
+    "Ghana 3": 40
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 4
+  },
+  {
+   "date": "2026-12-19",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 3380
+   },
+   "sown": {
+    "Ghana 3": 280
+   },
+   "used": 280,
+   "cap": 280,
+   "wd": 5
+  },
+  {
+   "date": "2026-12-20",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 3380
+   },
+   "sown": {},
+   "used": 0,
+   "cap": 0,
+   "wd": 6
+  },
+  {
+   "date": "2026-12-21",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 2820
+   },
+   "sown": {
+    "Ghana 3": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 0
+  },
+  {
+   "date": "2026-12-22",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 2260
+   },
+   "sown": {
+    "Ghana 3": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 1
+  },
+  {
+   "date": "2026-12-23",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 1700
+   },
+   "sown": {
+    "Ghana 3": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 2
+  },
+  {
+   "date": "2026-12-24",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 1140
+   },
+   "sown": {
+    "Ghana 3": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 3
+  },
+  {
+   "date": "2026-12-25",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 580
+   },
+   "sown": {
+    "Ghana 3": 560
+   },
+   "used": 560,
+   "cap": 560,
+   "wd": 4
+  },
+  {
+   "date": "2026-12-26",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 300
+   },
+   "sown": {
+    "Ghana 3": 280
+   },
+   "used": 280,
+   "cap": 280,
+   "wd": 5
+  },
+  {
+   "date": "2026-12-27",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 300
+   },
+   "sown": {},
+   "used": 0,
+   "cap": 0,
+   "wd": 6
+  },
+  {
+   "date": "2026-12-28",
+   "stock": {
+    "Ribáuè 2026": 0,
+    "Ribáuè 2025": 0,
+    "Ghana 0": 0,
+    "India": 0,
+    "Ghana 1": 0,
+    "Ghana 2": 0,
+    "Ghana 3": 0
+   },
+   "sown": {
+    "Ghana 3": 300
+   },
+   "used": 300,
+   "cap": 560,
+   "wd": 0
+  }
+ ]
+}
